@@ -1,0 +1,1873 @@
+2024-12-03 11:29:36,921:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-03 11:29:36,921:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-03 11:29:36,921:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-03 11:29:36,921:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-03 11:29:51,888:INFO:PyCaret RegressionExperiment
+2024-12-03 11:29:51,889:INFO:Logging name: reg-default-name
+2024-12-03 11:29:51,889:INFO:ML Usecase: MLUsecase.REGRESSION
+2024-12-03 11:29:51,890:INFO:version 3.3.2
+2024-12-03 11:29:51,890:INFO:Initializing setup()
+2024-12-03 11:29:51,890:INFO:self.USI: 868d
+2024-12-03 11:29:51,890:INFO:self._variable_keys: {'memory', 'y_train', 'data', 'pipeline', 'y_test', '_available_plots', 'html_param', 'target_param', 'USI', 'gpu_n_jobs_param', 'X_train', 'fold_shuffle_param', 'y', 'logging_param', 'X_test', 'seed', 'log_plots_param', 'idx', 'gpu_param', 'fold_generator', 'transform_target_param', '_ml_usecase', 'X', 'n_jobs_param', 'exp_name_log', 'fold_groups_param', 'exp_id'}
+2024-12-03 11:29:51,890:INFO:Checking environment
+2024-12-03 11:29:51,890:INFO:python_version: 3.11.5
+2024-12-03 11:29:51,890:INFO:python_build: ('main', 'Sep 11 2023 13:26:23')
+2024-12-03 11:29:51,890:INFO:machine: AMD64
+2024-12-03 11:29:51,890:INFO:platform: Windows-10-10.0.22631-SP0
+2024-12-03 11:29:51,890:INFO:Memory: svmem(total=16803217408, available=4569432064, percent=72.8, used=12233785344, free=4569432064)
+2024-12-03 11:29:51,891:INFO:Physical Core: 10
+2024-12-03 11:29:51,891:INFO:Logical Core: 12
+2024-12-03 11:29:51,891:INFO:Checking libraries
+2024-12-03 11:29:51,891:INFO:System:
+2024-12-03 11:29:51,891:INFO:    python: 3.11.5 | packaged by Anaconda, Inc. | (main, Sep 11 2023, 13:26:23) [MSC v.1916 64 bit (AMD64)]
+2024-12-03 11:29:51,891:INFO:executable: c:\Users\shaki\anaconda3\python.exe
+2024-12-03 11:29:51,891:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-12-03 11:29:51,891:INFO:PyCaret required dependencies:
+2024-12-03 11:29:52,811:INFO:                 pip: 23.2.1
+2024-12-03 11:29:52,811:INFO:          setuptools: 68.0.0
+2024-12-03 11:29:52,811:INFO:             pycaret: 3.3.2
+2024-12-03 11:29:52,811:INFO:             IPython: 8.15.0
+2024-12-03 11:29:52,811:INFO:          ipywidgets: 8.0.4
+2024-12-03 11:29:52,811:INFO:                tqdm: 4.65.0
+2024-12-03 11:29:52,811:INFO:               numpy: 1.24.3
+2024-12-03 11:29:52,811:INFO:              pandas: 2.0.3
+2024-12-03 11:29:52,811:INFO:              jinja2: 3.1.2
+2024-12-03 11:29:52,811:INFO:               scipy: 1.11.1
+2024-12-03 11:29:52,811:INFO:              joblib: 1.2.0
+2024-12-03 11:29:52,811:INFO:             sklearn: 1.4.2
+2024-12-03 11:29:52,811:INFO:                pyod: 2.0.2
+2024-12-03 11:29:52,811:INFO:            imblearn: 0.12.3
+2024-12-03 11:29:52,811:INFO:   category_encoders: 2.6.3
+2024-12-03 11:29:52,811:INFO:            lightgbm: 4.5.0
+2024-12-03 11:29:52,811:INFO:               numba: 0.57.1
+2024-12-03 11:29:52,811:INFO:            requests: 2.31.0
+2024-12-03 11:29:52,811:INFO:          matplotlib: 3.7.2
+2024-12-03 11:29:52,811:INFO:          scikitplot: 0.3.7
+2024-12-03 11:29:52,811:INFO:         yellowbrick: 1.5
+2024-12-03 11:29:52,811:INFO:              plotly: 5.24.0
+2024-12-03 11:29:52,811:INFO:    plotly-resampler: Not installed
+2024-12-03 11:29:52,811:INFO:             kaleido: 0.2.1
+2024-12-03 11:29:52,811:INFO:           schemdraw: 0.15
+2024-12-03 11:29:52,811:INFO:         statsmodels: 0.14.0
+2024-12-03 11:29:52,812:INFO:              sktime: 0.26.0
+2024-12-03 11:29:52,812:INFO:               tbats: 1.1.3
+2024-12-03 11:29:52,812:INFO:            pmdarima: 2.0.4
+2024-12-03 11:29:52,812:INFO:              psutil: 5.9.0
+2024-12-03 11:29:52,812:INFO:          markupsafe: 2.1.1
+2024-12-03 11:29:52,812:INFO:             pickle5: Not installed
+2024-12-03 11:29:52,812:INFO:         cloudpickle: 2.2.1
+2024-12-03 11:29:52,812:INFO:         deprecation: 2.1.0
+2024-12-03 11:29:52,812:INFO:              xxhash: 2.0.2
+2024-12-03 11:29:52,812:INFO:           wurlitzer: Not installed
+2024-12-03 11:29:52,812:INFO:PyCaret optional dependencies:
+2024-12-03 11:29:52,865:INFO:                shap: 0.46.0
+2024-12-03 11:29:52,865:INFO:           interpret: Not installed
+2024-12-03 11:29:52,865:INFO:                umap: 0.5.6
+2024-12-03 11:29:52,865:INFO:     ydata_profiling: Not installed
+2024-12-03 11:29:52,865:INFO:  explainerdashboard: Not installed
+2024-12-03 11:29:52,866:INFO:             autoviz: Not installed
+2024-12-03 11:29:52,866:INFO:           fairlearn: Not installed
+2024-12-03 11:29:52,866:INFO:          deepchecks: Not installed
+2024-12-03 11:29:52,866:INFO:             xgboost: 2.1.1
+2024-12-03 11:29:52,866:INFO:            catboost: Not installed
+2024-12-03 11:29:52,866:INFO:              kmodes: Not installed
+2024-12-03 11:29:52,866:INFO:             mlxtend: Not installed
+2024-12-03 11:29:52,866:INFO:       statsforecast: Not installed
+2024-12-03 11:29:52,866:INFO:        tune_sklearn: Not installed
+2024-12-03 11:29:52,866:INFO:                 ray: Not installed
+2024-12-03 11:29:52,866:INFO:            hyperopt: Not installed
+2024-12-03 11:29:52,866:INFO:              optuna: Not installed
+2024-12-03 11:29:52,866:INFO:               skopt: Not installed
+2024-12-03 11:29:52,867:INFO:              mlflow: 2.16.2
+2024-12-03 11:29:52,867:INFO:              gradio: Not installed
+2024-12-03 11:29:52,867:INFO:             fastapi: Not installed
+2024-12-03 11:29:52,867:INFO:             uvicorn: Not installed
+2024-12-03 11:29:52,867:INFO:              m2cgen: Not installed
+2024-12-03 11:29:52,867:INFO:           evidently: Not installed
+2024-12-03 11:29:52,867:INFO:               fugue: Not installed
+2024-12-03 11:29:52,867:INFO:           streamlit: Not installed
+2024-12-03 11:29:52,867:INFO:             prophet: Not installed
+2024-12-03 11:29:52,867:INFO:None
+2024-12-03 11:29:52,867:INFO:Set up data.
+2024-12-03 11:29:53,260:INFO:Set up folding strategy.
+2024-12-03 11:29:53,260:INFO:Set up train/test split.
+2024-12-03 11:29:53,544:INFO:Set up index.
+2024-12-03 11:29:53,548:INFO:Assigning column types.
+2024-12-03 11:29:53,953:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-12-03 11:29:53,953:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-12-03 11:29:53,956:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-12-03 11:29:53,958:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-12-03 11:29:54,260:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-12-03 11:29:54,284:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-12-03 11:29:54,285:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-12-03 11:29:54,287:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-12-03 11:29:54,287:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-12-03 11:29:54,289:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-12-03 11:29:54,291:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-12-03 11:29:54,661:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-12-03 11:29:54,686:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-12-03 11:29:54,686:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-12-03 11:29:54,688:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-12-03 11:29:54,688:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2024-12-03 11:29:54,690:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-12-03 11:29:54,693:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-12-03 11:29:54,990:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-12-03 11:29:55,014:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-12-03 11:29:55,014:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-12-03 11:29:55,015:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-12-03 11:29:55,019:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-12-03 11:29:55,021:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-12-03 11:29:55,399:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-12-03 11:29:55,424:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-12-03 11:29:55,425:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-12-03 11:29:55,426:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-12-03 11:29:55,426:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2024-12-03 11:29:55,431:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-12-03 11:29:55,712:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-12-03 11:29:55,737:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-12-03 11:29:55,737:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-12-03 11:29:55,739:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-12-03 11:29:55,743:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-12-03 11:29:56,115:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-12-03 11:29:56,141:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-12-03 11:29:56,141:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-12-03 11:29:56,142:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-12-03 11:29:56,143:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2024-12-03 11:29:56,441:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-12-03 11:29:56,464:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-12-03 11:29:56,464:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-12-03 11:29:56,466:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-12-03 11:29:56,760:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-12-03 11:29:56,783:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-12-03 11:29:56,784:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-12-03 11:29:56,785:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-12-03 11:29:56,785:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-12-03 11:29:57,203:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-12-03 11:29:57,227:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-12-03 11:29:57,229:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-12-03 11:29:57,523:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-12-03 11:29:57,548:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-12-03 11:29:57,550:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-12-03 11:29:57,550:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2024-12-03 11:29:57,888:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-12-03 11:29:57,889:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-12-03 11:29:58,226:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-12-03 11:29:58,227:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-12-03 11:29:58,230:INFO:Preparing preprocessing pipeline...
+2024-12-03 11:29:58,230:INFO:Set up simple imputation.
+2024-12-03 11:29:58,398:INFO:Set up encoding of ordinal features.
+2024-12-03 11:29:58,606:INFO:Set up encoding of categorical features.
+2024-12-03 11:29:58,636:INFO:Set up column name cleaning.
+2024-12-03 11:30:02,490:INFO:Finished creating preprocessing pipeline.
+2024-12-03 11:30:02,511:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\shaki\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['AAMDC', 'AASDHPPT', 'ABAT',
+                                             'ABCB10', 'ABCC2', 'ABCC4',
+                                             'ABCC9', 'ABCD3', 'ABCF1',
+                                             'ABHD13', 'ABHD2', 'ABHD4', 'ABI1',
+                                             'RABL2A', 'ABLIM1', 'ACACB',
+                                             'ACAD10', 'ACAD8', 'ACADM',
+                                             'ACAT1', 'ACBD3', 'ACBD6', 'ACCS',
+                                             'ACER3', 'ACIN1', 'ACOT11',
+                                             'A...
+                 TransformerWrapper(include=['Sex'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Sex'],
+                                    transformer=OrdinalEncoder(cols=['Sex'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64}]))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames()))])
+2024-12-03 11:30:02,512:INFO:Creating final display dataframe.
+2024-12-03 11:30:04,257:WARNING:c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py:289: UserWarning: Persisting input arguments took 0.50s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_full_transform(
+
+2024-12-03 11:30:08,911:WARNING:c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py:289: UserWarning: Persisting input arguments took 0.90s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_full_transform(
+
+2024-12-03 11:30:10,852:INFO:Setup _display_container:                     Description             Value
+0                    Session id               123
+1                        Target         Mortality
+2                   Target type        Regression
+3           Original data shape       (767, 3203)
+4        Transformed data shape       (767, 3203)
+5   Transformed train set shape       (536, 3203)
+6    Transformed test set shape       (231, 3203)
+7              Numeric features              3201
+8          Categorical features                 1
+9                    Preprocess              True
+10              Imputation type            simple
+11           Numeric imputation              mean
+12       Categorical imputation              mode
+13     Maximum one-hot encoding                25
+14              Encoding method              None
+15               Fold Generator             KFold
+16                  Fold Number                10
+17                     CPU Jobs                -1
+18                      Use GPU             False
+19               Log Experiment             False
+20              Experiment Name  reg-default-name
+21                          USI              868d
+2024-12-03 11:30:11,398:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-12-03 11:30:11,401:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-12-03 11:30:11,797:INFO:Soft dependency imported: xgboost: 2.1.1
+2024-12-03 11:30:11,800:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-12-03 11:30:11,800:INFO:setup() successfully completed in 19.94s...............
+2024-12-03 11:31:01,920:INFO:Initializing compare_models()
+2024-12-03 11:31:01,921:INFO:compare_models(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AA715F5E10>, include=None, exclude=None, fold=None, round=4, cross_validation=True, sort=R2, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.regression.oop.RegressionExperiment object at 0x000001AA715F5E10>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'R2', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.regression.oop.RegressionExperiment'>})
+2024-12-03 11:31:01,921:INFO:Checking exceptions
+2024-12-03 11:31:02,145:INFO:Preparing display monitor
+2024-12-03 11:31:02,166:INFO:Initializing Linear Regression
+2024-12-03 11:31:02,166:INFO:Total runtime is 0.0 minutes
+2024-12-03 11:31:02,171:INFO:SubProcess create_model() called ==================================
+2024-12-03 11:31:02,172:INFO:Initializing create_model()
+2024-12-03 11:31:02,173:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AA715F5E10>, estimator=lr, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AA73075DD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 11:31:02,173:INFO:Checking exceptions
+2024-12-03 11:31:02,173:INFO:Importing libraries
+2024-12-03 11:31:02,173:INFO:Copying training dataset
+2024-12-03 11:31:02,632:INFO:Defining folds
+2024-12-03 11:31:02,632:INFO:Declaring metric variables
+2024-12-03 11:31:02,635:INFO:Importing untrained model
+2024-12-03 11:31:02,637:INFO:Linear Regression Imported successfully
+2024-12-03 11:31:02,643:INFO:Starting cross validation
+2024-12-03 11:31:02,656:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-03 11:31:14,844:WARNING:create_model() for lr raised an exception or returned all 0.0, trying without fit_kwargs:
+2024-12-03 11:31:14,852:WARNING:Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 794, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1533, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1126, in _create_model_with_cv
+    scores = cross_validate(
+             ^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 450, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 536, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 10 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+10 fits failed with the following error:
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 278, in fit
+    fitted_estimator = self._memory_fit(
+                       ^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\joblib\memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 69, in _fit_one
+    transformer.fit(*args)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\linear_model\_base.py", line 578, in fit
+    X, y = self._validate_data(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 650, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1279, in check_X_y
+    y = _check_y(y, multi_output=multi_output, y_numeric=y_numeric, estimator=estimator)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1304, in _check_y
+    y = y.astype(np.float64)
+        ^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'Dead'
+
+
+2024-12-03 11:31:14,852:INFO:Initializing create_model()
+2024-12-03 11:31:14,852:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AA715F5E10>, estimator=lr, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AA73075DD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 11:31:14,852:INFO:Checking exceptions
+2024-12-03 11:31:14,852:INFO:Importing libraries
+2024-12-03 11:31:14,853:INFO:Copying training dataset
+2024-12-03 11:31:15,199:INFO:Defining folds
+2024-12-03 11:31:15,199:INFO:Declaring metric variables
+2024-12-03 11:31:15,202:INFO:Importing untrained model
+2024-12-03 11:31:15,206:INFO:Linear Regression Imported successfully
+2024-12-03 11:31:15,211:INFO:Starting cross validation
+2024-12-03 11:31:15,219:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-03 11:31:23,081:ERROR:create_model() for lr raised an exception or returned all 0.0:
+2024-12-03 11:31:23,084:ERROR:Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 794, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1533, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1126, in _create_model_with_cv
+    scores = cross_validate(
+             ^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 450, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 536, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 10 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+10 fits failed with the following error:
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 278, in fit
+    fitted_estimator = self._memory_fit(
+                       ^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\joblib\memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 69, in _fit_one
+    transformer.fit(*args)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\linear_model\_base.py", line 578, in fit
+    X, y = self._validate_data(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 650, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1279, in check_X_y
+    y = _check_y(y, multi_output=multi_output, y_numeric=y_numeric, estimator=estimator)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1304, in _check_y
+    y = y.astype(np.float64)
+        ^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'Dead'
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 815, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1533, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1126, in _create_model_with_cv
+    scores = cross_validate(
+             ^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 450, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 536, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 10 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+10 fits failed with the following error:
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 278, in fit
+    fitted_estimator = self._memory_fit(
+                       ^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\joblib\memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 69, in _fit_one
+    transformer.fit(*args)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\linear_model\_base.py", line 578, in fit
+    X, y = self._validate_data(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 650, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1279, in check_X_y
+    y = _check_y(y, multi_output=multi_output, y_numeric=y_numeric, estimator=estimator)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1304, in _check_y
+    y = y.astype(np.float64)
+        ^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'Dead'
+
+
+2024-12-03 11:31:23,089:INFO:Initializing Lasso Regression
+2024-12-03 11:31:23,089:INFO:Total runtime is 0.34871931076049806 minutes
+2024-12-03 11:31:23,092:INFO:SubProcess create_model() called ==================================
+2024-12-03 11:31:23,093:INFO:Initializing create_model()
+2024-12-03 11:31:23,093:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AA715F5E10>, estimator=lasso, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AA73075DD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 11:31:23,093:INFO:Checking exceptions
+2024-12-03 11:31:23,093:INFO:Importing libraries
+2024-12-03 11:31:23,093:INFO:Copying training dataset
+2024-12-03 11:31:23,435:INFO:Defining folds
+2024-12-03 11:31:23,435:INFO:Declaring metric variables
+2024-12-03 11:31:23,439:INFO:Importing untrained model
+2024-12-03 11:31:23,441:INFO:Lasso Regression Imported successfully
+2024-12-03 11:31:23,445:INFO:Starting cross validation
+2024-12-03 11:31:23,453:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-03 11:31:30,262:WARNING:create_model() for lasso raised an exception or returned all 0.0, trying without fit_kwargs:
+2024-12-03 11:31:30,263:WARNING:Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 794, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1533, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1126, in _create_model_with_cv
+    scores = cross_validate(
+             ^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 450, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 536, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 10 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+10 fits failed with the following error:
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 278, in fit
+    fitted_estimator = self._memory_fit(
+                       ^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\joblib\memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 69, in _fit_one
+    transformer.fit(*args)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\linear_model\_coordinate_descent.py", line 955, in fit
+    X, y = self._validate_data(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 650, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1279, in check_X_y
+    y = _check_y(y, multi_output=multi_output, y_numeric=y_numeric, estimator=estimator)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1304, in _check_y
+    y = y.astype(np.float64)
+        ^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'Dead'
+
+
+2024-12-03 11:31:30,264:INFO:Initializing create_model()
+2024-12-03 11:31:30,264:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AA715F5E10>, estimator=lasso, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AA73075DD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 11:31:30,264:INFO:Checking exceptions
+2024-12-03 11:31:30,264:INFO:Importing libraries
+2024-12-03 11:31:30,264:INFO:Copying training dataset
+2024-12-03 11:31:30,590:INFO:Defining folds
+2024-12-03 11:31:30,590:INFO:Declaring metric variables
+2024-12-03 11:31:30,593:INFO:Importing untrained model
+2024-12-03 11:31:30,595:INFO:Lasso Regression Imported successfully
+2024-12-03 11:31:30,603:INFO:Starting cross validation
+2024-12-03 11:31:30,609:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-03 11:31:37,407:ERROR:create_model() for lasso raised an exception or returned all 0.0:
+2024-12-03 11:31:37,409:ERROR:Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 794, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1533, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1126, in _create_model_with_cv
+    scores = cross_validate(
+             ^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 450, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 536, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 10 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+10 fits failed with the following error:
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 278, in fit
+    fitted_estimator = self._memory_fit(
+                       ^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\joblib\memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 69, in _fit_one
+    transformer.fit(*args)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\linear_model\_coordinate_descent.py", line 955, in fit
+    X, y = self._validate_data(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 650, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1279, in check_X_y
+    y = _check_y(y, multi_output=multi_output, y_numeric=y_numeric, estimator=estimator)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1304, in _check_y
+    y = y.astype(np.float64)
+        ^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'Dead'
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 815, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1533, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1126, in _create_model_with_cv
+    scores = cross_validate(
+             ^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 450, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 536, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 10 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+10 fits failed with the following error:
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 278, in fit
+    fitted_estimator = self._memory_fit(
+                       ^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\joblib\memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 69, in _fit_one
+    transformer.fit(*args)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\linear_model\_coordinate_descent.py", line 955, in fit
+    X, y = self._validate_data(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 650, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1279, in check_X_y
+    y = _check_y(y, multi_output=multi_output, y_numeric=y_numeric, estimator=estimator)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1304, in _check_y
+    y = y.astype(np.float64)
+        ^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'Dead'
+
+
+2024-12-03 11:31:37,415:INFO:Initializing Ridge Regression
+2024-12-03 11:31:37,415:INFO:Total runtime is 0.5874828378359477 minutes
+2024-12-03 11:31:37,417:INFO:SubProcess create_model() called ==================================
+2024-12-03 11:31:37,419:INFO:Initializing create_model()
+2024-12-03 11:31:37,419:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AA715F5E10>, estimator=ridge, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AA73075DD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 11:31:37,419:INFO:Checking exceptions
+2024-12-03 11:31:37,419:INFO:Importing libraries
+2024-12-03 11:31:37,419:INFO:Copying training dataset
+2024-12-03 11:31:37,751:INFO:Defining folds
+2024-12-03 11:31:37,751:INFO:Declaring metric variables
+2024-12-03 11:31:37,757:INFO:Importing untrained model
+2024-12-03 11:31:37,760:INFO:Ridge Regression Imported successfully
+2024-12-03 11:31:37,763:INFO:Starting cross validation
+2024-12-03 11:31:37,772:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-03 11:31:44,572:WARNING:create_model() for ridge raised an exception or returned all 0.0, trying without fit_kwargs:
+2024-12-03 11:31:44,573:WARNING:Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 794, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1533, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1126, in _create_model_with_cv
+    scores = cross_validate(
+             ^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 450, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 536, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 10 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+10 fits failed with the following error:
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 278, in fit
+    fitted_estimator = self._memory_fit(
+                       ^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\joblib\memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 69, in _fit_one
+    transformer.fit(*args)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\linear_model\_ridge.py", line 1167, in fit
+    X, y = self._validate_data(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 650, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1279, in check_X_y
+    y = _check_y(y, multi_output=multi_output, y_numeric=y_numeric, estimator=estimator)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1304, in _check_y
+    y = y.astype(np.float64)
+        ^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'Dead'
+
+
+2024-12-03 11:31:44,574:INFO:Initializing create_model()
+2024-12-03 11:31:44,574:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AA715F5E10>, estimator=ridge, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AA73075DD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 11:31:44,574:INFO:Checking exceptions
+2024-12-03 11:31:44,574:INFO:Importing libraries
+2024-12-03 11:31:44,574:INFO:Copying training dataset
+2024-12-03 11:31:44,905:INFO:Defining folds
+2024-12-03 11:31:44,906:INFO:Declaring metric variables
+2024-12-03 11:31:44,909:INFO:Importing untrained model
+2024-12-03 11:31:44,912:INFO:Ridge Regression Imported successfully
+2024-12-03 11:31:44,918:INFO:Starting cross validation
+2024-12-03 11:31:44,924:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-03 11:31:51,514:ERROR:create_model() for ridge raised an exception or returned all 0.0:
+2024-12-03 11:31:51,516:ERROR:Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 794, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1533, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1126, in _create_model_with_cv
+    scores = cross_validate(
+             ^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 450, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 536, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 10 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+10 fits failed with the following error:
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 278, in fit
+    fitted_estimator = self._memory_fit(
+                       ^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\joblib\memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 69, in _fit_one
+    transformer.fit(*args)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\linear_model\_ridge.py", line 1167, in fit
+    X, y = self._validate_data(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 650, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1279, in check_X_y
+    y = _check_y(y, multi_output=multi_output, y_numeric=y_numeric, estimator=estimator)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1304, in _check_y
+    y = y.astype(np.float64)
+        ^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'Dead'
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 815, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1533, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1126, in _create_model_with_cv
+    scores = cross_validate(
+             ^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 450, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 536, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 10 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+10 fits failed with the following error:
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 278, in fit
+    fitted_estimator = self._memory_fit(
+                       ^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\joblib\memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 69, in _fit_one
+    transformer.fit(*args)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\linear_model\_ridge.py", line 1167, in fit
+    X, y = self._validate_data(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 650, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1279, in check_X_y
+    y = _check_y(y, multi_output=multi_output, y_numeric=y_numeric, estimator=estimator)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1304, in _check_y
+    y = y.astype(np.float64)
+        ^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'Dead'
+
+
+2024-12-03 11:31:51,520:INFO:Initializing Elastic Net
+2024-12-03 11:31:51,520:INFO:Total runtime is 0.8225779851277669 minutes
+2024-12-03 11:31:51,523:INFO:SubProcess create_model() called ==================================
+2024-12-03 11:31:51,523:INFO:Initializing create_model()
+2024-12-03 11:31:51,523:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AA715F5E10>, estimator=en, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AA73075DD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 11:31:51,523:INFO:Checking exceptions
+2024-12-03 11:31:51,523:INFO:Importing libraries
+2024-12-03 11:31:51,524:INFO:Copying training dataset
+2024-12-03 11:31:51,941:INFO:Defining folds
+2024-12-03 11:31:51,941:INFO:Declaring metric variables
+2024-12-03 11:31:51,945:INFO:Importing untrained model
+2024-12-03 11:31:51,947:INFO:Elastic Net Imported successfully
+2024-12-03 11:31:51,954:INFO:Starting cross validation
+2024-12-03 11:31:51,961:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-03 11:31:58,663:WARNING:create_model() for en raised an exception or returned all 0.0, trying without fit_kwargs:
+2024-12-03 11:31:58,664:WARNING:Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 794, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1533, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1126, in _create_model_with_cv
+    scores = cross_validate(
+             ^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 450, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 536, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 10 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+10 fits failed with the following error:
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 278, in fit
+    fitted_estimator = self._memory_fit(
+                       ^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\joblib\memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 69, in _fit_one
+    transformer.fit(*args)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\linear_model\_coordinate_descent.py", line 955, in fit
+    X, y = self._validate_data(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 650, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1279, in check_X_y
+    y = _check_y(y, multi_output=multi_output, y_numeric=y_numeric, estimator=estimator)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1304, in _check_y
+    y = y.astype(np.float64)
+        ^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'Dead'
+
+
+2024-12-03 11:31:58,664:INFO:Initializing create_model()
+2024-12-03 11:31:58,664:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AA715F5E10>, estimator=en, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AA73075DD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 11:31:58,665:INFO:Checking exceptions
+2024-12-03 11:31:58,665:INFO:Importing libraries
+2024-12-03 11:31:58,665:INFO:Copying training dataset
+2024-12-03 11:31:59,090:INFO:Defining folds
+2024-12-03 11:31:59,091:INFO:Declaring metric variables
+2024-12-03 11:31:59,093:INFO:Importing untrained model
+2024-12-03 11:31:59,097:INFO:Elastic Net Imported successfully
+2024-12-03 11:31:59,104:INFO:Starting cross validation
+2024-12-03 11:31:59,112:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-03 11:32:05,720:ERROR:create_model() for en raised an exception or returned all 0.0:
+2024-12-03 11:32:05,722:ERROR:Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 794, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1533, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1126, in _create_model_with_cv
+    scores = cross_validate(
+             ^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 450, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 536, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 10 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+10 fits failed with the following error:
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 278, in fit
+    fitted_estimator = self._memory_fit(
+                       ^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\joblib\memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 69, in _fit_one
+    transformer.fit(*args)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\linear_model\_coordinate_descent.py", line 955, in fit
+    X, y = self._validate_data(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 650, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1279, in check_X_y
+    y = _check_y(y, multi_output=multi_output, y_numeric=y_numeric, estimator=estimator)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1304, in _check_y
+    y = y.astype(np.float64)
+        ^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'Dead'
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 815, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1533, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1126, in _create_model_with_cv
+    scores = cross_validate(
+             ^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 450, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 536, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 10 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+10 fits failed with the following error:
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 278, in fit
+    fitted_estimator = self._memory_fit(
+                       ^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\joblib\memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 69, in _fit_one
+    transformer.fit(*args)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\linear_model\_coordinate_descent.py", line 955, in fit
+    X, y = self._validate_data(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 650, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1279, in check_X_y
+    y = _check_y(y, multi_output=multi_output, y_numeric=y_numeric, estimator=estimator)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1304, in _check_y
+    y = y.astype(np.float64)
+        ^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'Dead'
+
+
+2024-12-03 11:32:05,725:INFO:Initializing Least Angle Regression
+2024-12-03 11:32:05,725:INFO:Total runtime is 1.059330677986145 minutes
+2024-12-03 11:32:05,728:INFO:SubProcess create_model() called ==================================
+2024-12-03 11:32:05,728:INFO:Initializing create_model()
+2024-12-03 11:32:05,728:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AA715F5E10>, estimator=lar, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AA73075DD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 11:32:05,728:INFO:Checking exceptions
+2024-12-03 11:32:05,728:INFO:Importing libraries
+2024-12-03 11:32:05,728:INFO:Copying training dataset
+2024-12-03 11:32:06,152:INFO:Defining folds
+2024-12-03 11:32:06,152:INFO:Declaring metric variables
+2024-12-03 11:32:06,156:INFO:Importing untrained model
+2024-12-03 11:32:06,159:INFO:Least Angle Regression Imported successfully
+2024-12-03 11:32:06,163:INFO:Starting cross validation
+2024-12-03 11:32:06,171:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-03 11:32:12,798:WARNING:create_model() for lar raised an exception or returned all 0.0, trying without fit_kwargs:
+2024-12-03 11:32:12,799:WARNING:Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 794, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1533, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1126, in _create_model_with_cv
+    scores = cross_validate(
+             ^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 450, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 536, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 10 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+10 fits failed with the following error:
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 278, in fit
+    fitted_estimator = self._memory_fit(
+                       ^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\joblib\memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 69, in _fit_one
+    transformer.fit(*args)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\linear_model\_least_angle.py", line 1146, in fit
+    X, y = self._validate_data(X, y, y_numeric=True, multi_output=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 650, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1279, in check_X_y
+    y = _check_y(y, multi_output=multi_output, y_numeric=y_numeric, estimator=estimator)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1304, in _check_y
+    y = y.astype(np.float64)
+        ^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'Dead'
+
+
+2024-12-03 11:32:12,799:INFO:Initializing create_model()
+2024-12-03 11:32:12,799:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AA715F5E10>, estimator=lar, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AA73075DD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 11:32:12,799:INFO:Checking exceptions
+2024-12-03 11:32:12,800:INFO:Importing libraries
+2024-12-03 11:32:12,800:INFO:Copying training dataset
+2024-12-03 11:32:13,221:INFO:Defining folds
+2024-12-03 11:32:13,221:INFO:Declaring metric variables
+2024-12-03 11:32:13,225:INFO:Importing untrained model
+2024-12-03 11:32:13,228:INFO:Least Angle Regression Imported successfully
+2024-12-03 11:32:13,233:INFO:Starting cross validation
+2024-12-03 11:32:13,242:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-03 11:32:19,809:ERROR:create_model() for lar raised an exception or returned all 0.0:
+2024-12-03 11:32:19,812:ERROR:Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 794, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1533, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1126, in _create_model_with_cv
+    scores = cross_validate(
+             ^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 450, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 536, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 10 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+10 fits failed with the following error:
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 278, in fit
+    fitted_estimator = self._memory_fit(
+                       ^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\joblib\memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 69, in _fit_one
+    transformer.fit(*args)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\linear_model\_least_angle.py", line 1146, in fit
+    X, y = self._validate_data(X, y, y_numeric=True, multi_output=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 650, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1279, in check_X_y
+    y = _check_y(y, multi_output=multi_output, y_numeric=y_numeric, estimator=estimator)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1304, in _check_y
+    y = y.astype(np.float64)
+        ^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'Dead'
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 815, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1533, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1126, in _create_model_with_cv
+    scores = cross_validate(
+             ^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 450, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 536, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 10 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+10 fits failed with the following error:
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 278, in fit
+    fitted_estimator = self._memory_fit(
+                       ^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\joblib\memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 69, in _fit_one
+    transformer.fit(*args)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\linear_model\_least_angle.py", line 1146, in fit
+    X, y = self._validate_data(X, y, y_numeric=True, multi_output=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 650, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1279, in check_X_y
+    y = _check_y(y, multi_output=multi_output, y_numeric=y_numeric, estimator=estimator)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1304, in _check_y
+    y = y.astype(np.float64)
+        ^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'Dead'
+
+
+2024-12-03 11:32:19,817:INFO:Initializing Lasso Least Angle Regression
+2024-12-03 11:32:19,817:INFO:Total runtime is 1.2941862066586813 minutes
+2024-12-03 11:32:19,820:INFO:SubProcess create_model() called ==================================
+2024-12-03 11:32:19,820:INFO:Initializing create_model()
+2024-12-03 11:32:19,820:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AA715F5E10>, estimator=llar, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AA73075DD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 11:32:19,820:INFO:Checking exceptions
+2024-12-03 11:32:19,820:INFO:Importing libraries
+2024-12-03 11:32:19,820:INFO:Copying training dataset
+2024-12-03 11:32:20,248:INFO:Defining folds
+2024-12-03 11:32:20,248:INFO:Declaring metric variables
+2024-12-03 11:32:20,253:INFO:Importing untrained model
+2024-12-03 11:32:20,257:INFO:Lasso Least Angle Regression Imported successfully
+2024-12-03 11:32:20,262:INFO:Starting cross validation
+2024-12-03 11:32:20,270:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-03 11:32:27,695:WARNING:create_model() for llar raised an exception or returned all 0.0, trying without fit_kwargs:
+2024-12-03 11:32:27,696:WARNING:Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 794, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1533, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1126, in _create_model_with_cv
+    scores = cross_validate(
+             ^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 450, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 536, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 10 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+10 fits failed with the following error:
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 278, in fit
+    fitted_estimator = self._memory_fit(
+                       ^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\joblib\memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 69, in _fit_one
+    transformer.fit(*args)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\linear_model\_least_angle.py", line 1146, in fit
+    X, y = self._validate_data(X, y, y_numeric=True, multi_output=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 650, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1279, in check_X_y
+    y = _check_y(y, multi_output=multi_output, y_numeric=y_numeric, estimator=estimator)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1304, in _check_y
+    y = y.astype(np.float64)
+        ^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'Dead'
+
+
+2024-12-03 11:32:27,697:INFO:Initializing create_model()
+2024-12-03 11:32:27,697:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AA715F5E10>, estimator=llar, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AA73075DD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 11:32:27,697:INFO:Checking exceptions
+2024-12-03 11:32:27,697:INFO:Importing libraries
+2024-12-03 11:32:27,697:INFO:Copying training dataset
+2024-12-03 11:32:28,160:INFO:Defining folds
+2024-12-03 11:32:28,161:INFO:Declaring metric variables
+2024-12-03 11:32:28,163:INFO:Importing untrained model
+2024-12-03 11:32:28,170:INFO:Lasso Least Angle Regression Imported successfully
+2024-12-03 11:32:28,174:INFO:Starting cross validation
+2024-12-03 11:32:28,182:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-03 11:32:35,689:ERROR:create_model() for llar raised an exception or returned all 0.0:
+2024-12-03 11:32:35,691:ERROR:Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 794, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1533, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1126, in _create_model_with_cv
+    scores = cross_validate(
+             ^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 450, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 536, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 10 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+10 fits failed with the following error:
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 278, in fit
+    fitted_estimator = self._memory_fit(
+                       ^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\joblib\memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 69, in _fit_one
+    transformer.fit(*args)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\linear_model\_least_angle.py", line 1146, in fit
+    X, y = self._validate_data(X, y, y_numeric=True, multi_output=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 650, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1279, in check_X_y
+    y = _check_y(y, multi_output=multi_output, y_numeric=y_numeric, estimator=estimator)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1304, in _check_y
+    y = y.astype(np.float64)
+        ^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'Dead'
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 815, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1533, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1126, in _create_model_with_cv
+    scores = cross_validate(
+             ^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 450, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 536, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 10 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+10 fits failed with the following error:
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 278, in fit
+    fitted_estimator = self._memory_fit(
+                       ^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\joblib\memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 69, in _fit_one
+    transformer.fit(*args)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\linear_model\_least_angle.py", line 1146, in fit
+    X, y = self._validate_data(X, y, y_numeric=True, multi_output=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 650, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1279, in check_X_y
+    y = _check_y(y, multi_output=multi_output, y_numeric=y_numeric, estimator=estimator)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1304, in _check_y
+    y = y.astype(np.float64)
+        ^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'Dead'
+
+
+2024-12-03 11:32:35,695:INFO:Initializing Orthogonal Matching Pursuit
+2024-12-03 11:32:35,695:INFO:Total runtime is 1.5588223735491435 minutes
+2024-12-03 11:32:35,697:INFO:SubProcess create_model() called ==================================
+2024-12-03 11:32:35,697:INFO:Initializing create_model()
+2024-12-03 11:32:35,697:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AA715F5E10>, estimator=omp, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AA73075DD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 11:32:35,697:INFO:Checking exceptions
+2024-12-03 11:32:35,698:INFO:Importing libraries
+2024-12-03 11:32:35,698:INFO:Copying training dataset
+2024-12-03 11:32:36,045:INFO:Defining folds
+2024-12-03 11:32:36,045:INFO:Declaring metric variables
+2024-12-03 11:32:36,050:INFO:Importing untrained model
+2024-12-03 11:32:36,055:INFO:Orthogonal Matching Pursuit Imported successfully
+2024-12-03 11:32:36,059:INFO:Starting cross validation
+2024-12-03 11:32:36,067:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-03 11:32:43,991:WARNING:create_model() for omp raised an exception or returned all 0.0, trying without fit_kwargs:
+2024-12-03 11:32:43,993:WARNING:Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 794, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1533, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1126, in _create_model_with_cv
+    scores = cross_validate(
+             ^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 450, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 536, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 10 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+10 fits failed with the following error:
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 278, in fit
+    fitted_estimator = self._memory_fit(
+                       ^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\joblib\memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 69, in _fit_one
+    transformer.fit(*args)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\linear_model\_omp.py", line 750, in fit
+    X, y = self._validate_data(X, y, multi_output=True, y_numeric=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 650, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1279, in check_X_y
+    y = _check_y(y, multi_output=multi_output, y_numeric=y_numeric, estimator=estimator)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1304, in _check_y
+    y = y.astype(np.float64)
+        ^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'Dead'
+
+
+2024-12-03 11:32:43,993:INFO:Initializing create_model()
+2024-12-03 11:32:43,994:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AA715F5E10>, estimator=omp, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AA73075DD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 11:32:43,994:INFO:Checking exceptions
+2024-12-03 11:32:43,994:INFO:Importing libraries
+2024-12-03 11:32:43,994:INFO:Copying training dataset
+2024-12-03 11:32:44,337:INFO:Defining folds
+2024-12-03 11:32:44,338:INFO:Declaring metric variables
+2024-12-03 11:32:44,342:INFO:Importing untrained model
+2024-12-03 11:32:44,345:INFO:Orthogonal Matching Pursuit Imported successfully
+2024-12-03 11:32:44,349:INFO:Starting cross validation
+2024-12-03 11:32:44,358:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-03 11:32:52,104:ERROR:create_model() for omp raised an exception or returned all 0.0:
+2024-12-03 11:32:52,107:ERROR:Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 794, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1533, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1126, in _create_model_with_cv
+    scores = cross_validate(
+             ^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 450, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 536, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 10 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+10 fits failed with the following error:
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 278, in fit
+    fitted_estimator = self._memory_fit(
+                       ^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\joblib\memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 69, in _fit_one
+    transformer.fit(*args)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\linear_model\_omp.py", line 750, in fit
+    X, y = self._validate_data(X, y, multi_output=True, y_numeric=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 650, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1279, in check_X_y
+    y = _check_y(y, multi_output=multi_output, y_numeric=y_numeric, estimator=estimator)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1304, in _check_y
+    y = y.astype(np.float64)
+        ^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'Dead'
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 815, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1533, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1126, in _create_model_with_cv
+    scores = cross_validate(
+             ^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 450, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 536, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 10 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+10 fits failed with the following error:
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 278, in fit
+    fitted_estimator = self._memory_fit(
+                       ^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\joblib\memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 69, in _fit_one
+    transformer.fit(*args)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\linear_model\_omp.py", line 750, in fit
+    X, y = self._validate_data(X, y, multi_output=True, y_numeric=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 650, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1279, in check_X_y
+    y = _check_y(y, multi_output=multi_output, y_numeric=y_numeric, estimator=estimator)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1304, in _check_y
+    y = y.astype(np.float64)
+        ^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'Dead'
+
+
+2024-12-03 11:32:52,111:INFO:Initializing Bayesian Ridge
+2024-12-03 11:32:52,111:INFO:Total runtime is 1.8324279904365541 minutes
+2024-12-03 11:32:52,114:INFO:SubProcess create_model() called ==================================
+2024-12-03 11:32:52,115:INFO:Initializing create_model()
+2024-12-03 11:32:52,115:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AA715F5E10>, estimator=br, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AA73075DD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 11:32:52,115:INFO:Checking exceptions
+2024-12-03 11:32:52,115:INFO:Importing libraries
+2024-12-03 11:32:52,115:INFO:Copying training dataset
+2024-12-03 11:32:52,532:INFO:Defining folds
+2024-12-03 11:32:52,532:INFO:Declaring metric variables
+2024-12-03 11:32:52,535:INFO:Importing untrained model
+2024-12-03 11:32:52,538:INFO:Bayesian Ridge Imported successfully
+2024-12-03 11:32:52,543:INFO:Starting cross validation
+2024-12-03 11:32:52,552:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-03 11:33:01,051:WARNING:create_model() for br raised an exception or returned all 0.0, trying without fit_kwargs:
+2024-12-03 11:33:01,053:WARNING:Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 794, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1533, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1126, in _create_model_with_cv
+    scores = cross_validate(
+             ^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 450, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 536, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 10 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+10 fits failed with the following error:
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 278, in fit
+    fitted_estimator = self._memory_fit(
+                       ^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\joblib\memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 69, in _fit_one
+    transformer.fit(*args)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\linear_model\_bayes.py", line 296, in fit
+    X, y = self._validate_data(X, y, dtype=[np.float64, np.float32], y_numeric=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 650, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1279, in check_X_y
+    y = _check_y(y, multi_output=multi_output, y_numeric=y_numeric, estimator=estimator)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1304, in _check_y
+    y = y.astype(np.float64)
+        ^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'Dead'
+
+
+2024-12-03 11:33:01,054:INFO:Initializing create_model()
+2024-12-03 11:33:01,054:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AA715F5E10>, estimator=br, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AA73075DD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 11:33:01,054:INFO:Checking exceptions
+2024-12-03 11:33:01,054:INFO:Importing libraries
+2024-12-03 11:33:01,054:INFO:Copying training dataset
+2024-12-03 11:33:01,504:INFO:Defining folds
+2024-12-03 11:33:01,504:INFO:Declaring metric variables
+2024-12-03 11:33:01,506:INFO:Importing untrained model
+2024-12-03 11:33:01,510:INFO:Bayesian Ridge Imported successfully
+2024-12-03 11:33:01,515:INFO:Starting cross validation
+2024-12-03 11:33:01,522:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-03 11:33:08,960:ERROR:create_model() for br raised an exception or returned all 0.0:
+2024-12-03 11:33:08,963:ERROR:Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 794, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1533, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1126, in _create_model_with_cv
+    scores = cross_validate(
+             ^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 450, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 536, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 10 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+10 fits failed with the following error:
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 278, in fit
+    fitted_estimator = self._memory_fit(
+                       ^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\joblib\memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 69, in _fit_one
+    transformer.fit(*args)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\linear_model\_bayes.py", line 296, in fit
+    X, y = self._validate_data(X, y, dtype=[np.float64, np.float32], y_numeric=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 650, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1279, in check_X_y
+    y = _check_y(y, multi_output=multi_output, y_numeric=y_numeric, estimator=estimator)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1304, in _check_y
+    y = y.astype(np.float64)
+        ^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'Dead'
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 815, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1533, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1126, in _create_model_with_cv
+    scores = cross_validate(
+             ^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 450, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 536, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 10 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+10 fits failed with the following error:
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 278, in fit
+    fitted_estimator = self._memory_fit(
+                       ^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\joblib\memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 69, in _fit_one
+    transformer.fit(*args)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\linear_model\_bayes.py", line 296, in fit
+    X, y = self._validate_data(X, y, dtype=[np.float64, np.float32], y_numeric=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 650, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1279, in check_X_y
+    y = _check_y(y, multi_output=multi_output, y_numeric=y_numeric, estimator=estimator)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 1304, in _check_y
+    y = y.astype(np.float64)
+        ^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'Dead'
+
+
+2024-12-03 11:33:08,969:INFO:Initializing Passive Aggressive Regressor
+2024-12-03 11:33:08,969:INFO:Total runtime is 2.1133915305137636 minutes
+2024-12-03 11:33:08,972:INFO:SubProcess create_model() called ==================================
+2024-12-03 11:33:08,972:INFO:Initializing create_model()
+2024-12-03 11:33:08,972:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AA715F5E10>, estimator=par, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AA73075DD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 11:33:08,972:INFO:Checking exceptions
+2024-12-03 11:33:08,972:INFO:Importing libraries
+2024-12-03 11:33:08,972:INFO:Copying training dataset
+2024-12-03 11:33:09,419:INFO:Defining folds
+2024-12-03 11:33:09,419:INFO:Declaring metric variables
+2024-12-03 11:33:09,424:INFO:Importing untrained model
+2024-12-03 11:33:09,426:INFO:Passive Aggressive Regressor Imported successfully
+2024-12-03 11:33:09,430:INFO:Starting cross validation
+2024-12-03 11:33:09,439:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-03 11:33:17,152:WARNING:create_model() for par raised an exception or returned all 0.0, trying without fit_kwargs:
+2024-12-03 11:33:17,153:WARNING:Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 794, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1533, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1126, in _create_model_with_cv
+    scores = cross_validate(
+             ^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 450, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 536, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 10 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+10 fits failed with the following error:
+Traceback (most recent call last):
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 278, in fit
+    fitted_estimator = self._memory_fit(
+                       ^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\joblib\memory.py", line 349, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\pycaret\internal\pipeline.py", line 69, in _fit_one
+    transformer.fit(*args)
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\linear_model\_passive_aggressive.py", line 566, in fit
+    return self._fit(
+           ^^^^^^^^^^
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\linear_model\_stochastic_gradient.py", line 1557, in _fit
+    self._partial_fit(
+  File "c:\Users\shaki\anaconda3\Lib\site-packages\sklearn\linear_model\_stochastic_gradient.py", line 1466, in _partial_fit
+    y = y.astype(X.dtype, copy=False)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'Dead'
+
+
+2024-12-03 11:33:17,153:INFO:Initializing create_model()
+2024-12-03 11:33:17,153:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AA715F5E10>, estimator=par, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AA73075DD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-03 11:33:17,153:INFO:Checking exceptions
+2024-12-03 11:33:17,154:INFO:Importing libraries
+2024-12-03 11:33:17,154:INFO:Copying training dataset
+2024-12-03 11:33:17,592:INFO:Defining folds
+2024-12-03 11:33:17,592:INFO:Declaring metric variables
+2024-12-03 11:33:17,596:INFO:Importing untrained model
+2024-12-03 11:33:17,599:INFO:Passive Aggressive Regressor Imported successfully
+2024-12-03 11:33:17,607:INFO:Starting cross validation
+2024-12-03 11:33:17,615:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
