@@ -4802,3 +4802,110 @@ Please also refer to the documentation for alternative solver options:
 2024-12-03 18:36:10,998:INFO:Scoring test/hold-out set
 2024-12-03 18:36:12,167:INFO:Visual Rendered Successfully
 2024-12-03 18:36:12,301:INFO:plot_model() successfully completed......................................
+2024-12-03 18:36:28,386:INFO:Initializing plot_model()
+2024-12-03 18:36:28,387:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001F0A19248D0>, estimator=XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='binary:logistic', ...), plot=parameter, scale=1, save=False, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), fit_kwargs={}, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=False, system=True, display=None, display_format=None)
+2024-12-03 18:36:28,387:INFO:Checking exceptions
+2024-12-03 18:36:28,466:INFO:Preloading libraries
+2024-12-03 18:36:28,466:INFO:Copying training dataset
+2024-12-03 18:36:28,466:INFO:Plot type: parameter
+2024-12-03 18:36:28,482:INFO:Visual Rendered Successfully
+2024-12-03 18:36:28,614:INFO:plot_model() successfully completed......................................
+2024-12-03 18:36:35,773:INFO:Initializing plot_model()
+2024-12-03 18:36:35,773:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001F0A19248D0>, estimator=XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='binary:logistic', ...), plot=confusion_matrix, scale=1, save=False, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), fit_kwargs={}, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=False, system=True, display=None, display_format=None)
+2024-12-03 18:36:35,773:INFO:Checking exceptions
+2024-12-03 18:36:35,849:INFO:Preloading libraries
+2024-12-03 18:36:35,865:INFO:Copying training dataset
+2024-12-03 18:36:35,865:INFO:Plot type: confusion_matrix
+2024-12-03 18:36:38,336:INFO:Fitting Model
+2024-12-03 18:36:38,337:INFO:Scoring test/hold-out set
+2024-12-03 18:36:39,426:INFO:Visual Rendered Successfully
+2024-12-03 18:36:39,536:INFO:plot_model() successfully completed......................................
+2024-12-03 18:36:59,308:INFO:Initializing plot_model()
+2024-12-03 18:36:59,309:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001F0A19248D0>, estimator=XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='binary:logistic', ...), plot=pr, scale=1, save=False, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), fit_kwargs={}, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=False, system=True, display=None, display_format=None)
+2024-12-03 18:36:59,311:INFO:Checking exceptions
+2024-12-03 18:36:59,384:INFO:Preloading libraries
+2024-12-03 18:36:59,398:INFO:Copying training dataset
+2024-12-03 18:36:59,398:INFO:Plot type: pr
+2024-12-03 18:37:01,721:INFO:Fitting Model
+2024-12-03 18:37:01,721:INFO:Scoring test/hold-out set
+2024-12-03 18:37:02,790:INFO:Visual Rendered Successfully
+2024-12-03 18:37:02,918:INFO:plot_model() successfully completed......................................
+2024-12-03 18:37:22,046:INFO:Initializing plot_model()
+2024-12-03 18:37:22,046:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001F0A19248D0>, estimator=XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='binary:logistic', ...), plot=manifold, scale=1, save=False, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), fit_kwargs={}, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=False, system=True, display=None, display_format=None)
+2024-12-03 18:37:22,051:INFO:Checking exceptions
+2024-12-03 18:37:22,133:INFO:Preloading libraries
+2024-12-03 18:37:22,133:INFO:Copying training dataset
+2024-12-03 18:37:22,133:INFO:Plot type: manifold
+2024-12-03 18:37:24,485:INFO:Fitting & Transforming Model
+2024-12-03 18:37:25,878:INFO:Visual Rendered Successfully
+2024-12-03 18:37:25,987:INFO:plot_model() successfully completed......................................
+2024-12-03 18:37:44,677:INFO:Initializing plot_model()
+2024-12-03 18:37:44,677:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001F0A19248D0>, estimator=XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='binary:logistic', ...), plot=tree, scale=1, save=False, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), fit_kwargs={}, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=False, system=True, display=None, display_format=None)
+2024-12-03 18:37:44,678:INFO:Checking exceptions
+2024-12-03 18:37:48,089:INFO:Initializing plot_model()
+2024-12-03 18:37:48,089:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001F0A19248D0>, estimator=XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='binary:logistic', ...), plot=rfe, scale=1, save=False, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), fit_kwargs={}, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=False, system=True, display=None, display_format=None)
+2024-12-03 18:37:48,090:INFO:Checking exceptions
+2024-12-03 18:37:48,166:INFO:Preloading libraries
+2024-12-03 18:37:48,182:INFO:Copying training dataset
+2024-12-03 18:37:48,182:INFO:Plot type: rfe
+2024-12-03 18:37:50,769:INFO:Fitting Model
