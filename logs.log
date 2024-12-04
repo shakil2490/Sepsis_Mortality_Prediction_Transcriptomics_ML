@@ -7299,3 +7299,79 @@ Please also refer to the documentation for alternative solver options:
                                objective='binary:logistic', ...))],
          verbose=False)
 2024-12-04 08:02:04,852:INFO:finalize_model() successfully completed......................................
+2024-12-04 08:02:17,976:INFO:Initializing save_model()
+2024-12-04 08:02:17,976:INFO:save_model(model=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['AAMDC', 'AASDHPPT', 'ABAT',
+                                             'ABCB10', 'ABCC2', 'ABCC4',
+                                             'ABCC9', 'ABCD3', 'ABCF1',
+                                             'ABHD13', 'ABHD2', 'ABHD4', 'ABI1',
+                                             'RABL2A', 'ABLIM1', 'ACACB',
+                                             'ACAD10...
+                               importance_type=None,
+                               interaction_constraints=None, learning_rate=None,
+                               max_bin=None, max_cat_threshold=None,
+                               max_cat_to_onehot=None, max_delta_step=None,
+                               max_depth=None, max_leaves=None,
+                               min_child_weight=None, missing=nan,
+                               monotone_constraints=None, multi_strategy=None,
+                               n_estimators=None, n_jobs=-1,
+                               num_parallel_tree=None,
+                               objective='binary:logistic', ...))],
+         verbose=False), model_name=Final Model, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\shaki\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['AAMDC', 'AASDHPPT', 'ABAT',
+                                             'ABCB10', 'ABCC2', 'ABCC4',
+                                             'ABCC9', 'ABCD3', 'ABCF1',
+                                             'ABHD13', 'ABHD2', 'ABHD4',...
+                                    transformer=OrdinalEncoder(cols=['Sex'],
+                                                               drop_invariant=False,
+                                                               handle_missing='return_nan',
+                                                               handle_unknown='value',
+                                                               mapping=[{'col': 'Sex',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': female    0
+male      1
+NaN      -1
+dtype: int64}],
+                                                               return_df=True,
+                                                               verbose=0))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+')))],
+         verbose=False), verbose=True, use_case=MLUsecase.CLASSIFICATION, kwargs={})
+2024-12-04 08:02:17,976:INFO:Adding model into prep_pipe
+2024-12-04 08:02:17,976:WARNING:Only Model saved as it was a pipeline.
+2024-12-04 08:02:18,035:INFO:Final Model.pkl saved in current working directory
+2024-12-04 08:02:18,102:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['AAMDC', 'AASDHPPT', 'ABAT',
+                                             'ABCB10', 'ABCC2', 'ABCC4',
+                                             'ABCC9', 'ABCD3', 'ABCF1',
+                                             'ABHD13', 'ABHD2', 'ABHD4', 'ABI1',
+                                             'RABL2A', 'ABLIM1', 'ACACB',
+                                             'ACAD10...
+                               importance_type=None,
+                               interaction_constraints=None, learning_rate=None,
+                               max_bin=None, max_cat_threshold=None,
+                               max_cat_to_onehot=None, max_delta_step=None,
+                               max_depth=None, max_leaves=None,
+                               min_child_weight=None, missing=nan,
+                               monotone_constraints=None, multi_strategy=None,
+                               n_estimators=None, n_jobs=-1,
+                               num_parallel_tree=None,
+                               objective='binary:logistic', ...))],
+         verbose=False)
+2024-12-04 08:02:18,102:INFO:save_model() successfully completed......................................
